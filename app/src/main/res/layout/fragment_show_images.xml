@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentImage.showImages_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+ <LinearLayout
+     android:gravity="center"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:orientation="horizontal">
+
+         <Button
+
+
+             android:id="@+id/btn_getImageByName"
+             android:layout_width="170dp"
+             android:layout_height="wrap_content"
+             android:layout_margin="2dp"
+             android:background="@drawable/round_button_design"
+
+             android:elevation="5dp"
+             android:ems="10"
+             android:shadowColor="#ABABAB"
+             android:shadowDx="5"
+             android:shadowDy="5"
+             android:text="get Image By name"
+             android:textColor="@color/colorAccent" />
+
+         <EditText
+             android:id="@+id/et_get_nameImage"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:layout_margin="4dp"
+             android:gravity="center"
+             android:hint="enter name image"
+             android:textColorHint="@color/common_google_signin_btn_text_light_disabled" />
+     </LinearLayout>
+
+     <Button
+
+
+         android:elevation="5dp"
+         android:ems="10"
+         android:shadowColor="#ABABAB"
+         android:shadowDx="5"
+         android:shadowDy="5"
+
+         android:id="@+id/btn_download_all_images"
+         android:layout_width="170dp"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         android:background="@drawable/round_button_design"
+         android:text="get All images"
+         android:textColor="@color/colorAccent" />
+     <ImageView
+         android:visibility="invisible"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/iv_getImageByName"
+         android:layout_margin="4dp"
+         android:layout_weight="1"
+         android:scaleType="fitCenter"
+         />
+
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/recycleImage"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+ </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaskFireBase</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="upload">Upload</string>
+    <string name="show">Show Images</string>
+
+
+</resources>
